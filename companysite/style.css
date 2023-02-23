@@ -1,0 +1,91 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family:Montserrat;
+  font-size: 18px;
+}
+.outer{
+  text-align:center;
+}
+.page{
+  display:inline-block;
+  max-width:1400px;
+  height:99vh;
+  background-color: #fff;
+  width: 100%;
+}
+.upline{
+  background-color: #81D8D0;
+  height: 5px;
+}
+.topofpage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:flex-start;
+  height: 70px;
+  align-items: center;
+}
+.logo{
+ width: 100px;
+ flex-grow: 1;
+}
+.logo_img{
+  width: 20%;
+}
+
+.search{
+width: 20px;
+margin-left: 40px;
+}
+.search_img{
+width: 100%;
+}
+
+.location{
+  width: 20px;
+  margin-left: 40px; 
+}
+.location_img{
+  width: 100%;
+}
+
+.contact{
+  width: 25px;
+  margin-left: 40px;
+}
+.contact_img{
+  width: 100%;
+}
+
+.shopping{
+width: 20px;
+align-content: flex-end;
+margin-right: 40px;
+}
+.shoping_img{
+  width: 100%; 
+}
+
+.saveditems{
+width: 20px;
+align-content: flex-end;
+margin-right: 40px;
+}
+.saveditems_img{
+  width: 100%;
+}
+
+.signin{
+width: 20px;
+align-content: flex-end;
+margin-right: 40px;
+}
+.signin_img{
+width: 100%;
+}
+.content{
+  background-color: #81D8D0;
+}
