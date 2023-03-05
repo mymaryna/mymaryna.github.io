@@ -1,0 +1,179 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family:Montserrat;
+  font-size: 18px;
+}
+.outer{
+  text-align:center;
+}
+.page{
+  display:inline-block;
+  max-width:1400px;
+  height:99vh;
+  background-color: #fff;
+  width: 100%;
+}
+.upline{
+  background-color: #81D8D0;
+  height: 3px;
+}
+.topofpage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:flex-start;
+  height: 70px;
+  align-items: center;
+  margin-top: -5px;
+}
+.logo{
+ width: 100px;
+ flex-grow: 1;
+}
+.logo_img{
+  width: 20%;
+}
+
+.search{
+width: 20px;
+margin-left: 40px;
+}
+.search_img{
+width: 100%;
+}
+
+.location{
+  width: 20px;
+  margin-left: 40px; 
+}
+.location_img{
+  width: 100%;
+}
+
+.contact{
+  width: 20px;
+  margin-left: 40px;
+}
+.contact_img{
+  width: 100%;
+}
+
+.shopping{
+width: 20px;
+align-content: flex-end;
+margin-right: 40px;
+}
+.shoping_img{
+  width: 100%; 
+}
+
+.saveditems{
+width: 20px;
+align-content: flex-end;
+margin-right: 40px;
+}
+.saveditems_img{
+  width: 100%;
+}
+
+.signin{
+width: 20px;
+align-content: flex-end;
+margin-right: 40px;
+}
+.signin_img{
+width: 100%;
+}
+.content{
+  background-color: #81D8D0;
+  margin-top: 10px;
+}
+.search-nav, .upline2, .hamburger-menu{
+  display: none;
+}
+
+.menu_img{
+  width: 20px;
+  margin-left: 40px; 
+  margin-right: 40px;
+}
+
+@media screen and (max-width:768px) {
+  .page{
+    width: 480px;
+    position: relative; 
+  }
+  
+  .search, .location, .contact, .signin{
+    display: none;
+  }
+  .logo{
+    width: 100px;
+    justify-content: center;
+    flex-grow: 1;
+   }
+  .logo_img{
+    width: 50%;
+  }
+  .search-nav{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;;
+  }
+  .search-bar{
+    flex: 1;
+    height: 35px;
+    border-style: none;
+    background-color: rgb(243, 247, 247);
+    margin-right: 40px;
+    padding-left: 10px;
+  }
+  .search-icon{
+    width: 20px; 
+    margin-left: 40px;
+    background-color: rgb(243, 247, 247);
+    padding-left: 10px;
+  }
+  .upline2{
+    display: block;
+    background-color: #81D8D0;
+    height: 3px;
+    margin-top: -15px;
+  }
+ 
+  #menuoverlay{
+    position: absolute;
+    top:0;
+    background-color:#f0f5f4;
+    width: 400px;
+    height: 98vh;
+    display: none;
+  }
+  .hamburger-menu{
+    display: inline-block
+  }
+  #close{
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .menuitem{
+    text-align: left;
+    margin: 30px;
+    font-size: 15px;
+  }
+  .img{
+    width: 20px;
+    margin-right: 10px;
+    
+  }
+  hr{
+    border-top: 1px solid black;
+    width: 350px;
+  }
+}
