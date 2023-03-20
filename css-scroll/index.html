@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>scroll</title>
+<style>
+ .page_content_stretch {
+   border: 1px solid red;
+   height: 3000px;
+   width: 1200px;
+   text-align: center;
+   font-size: 50px;
+   font-weight: bold;
+   font-family: sans-serif;
+   background-color: white;
+   margin: auto;
+
+ }
+ .scale_me {
+   position: fixed;
+   margin-top: 100px;
+   top: 50%;
+   left: 50%;
+   transform-origin: center center;
+   transform: translate(-50%, -50%) scale(1, 1);
+ }
+body{
+  background-color: rgb(95, 132, 205);
+}
+</style>
+</head>
+<body>
+    <div class="scale_me" id="scaleme"> <img src="img/owl.png"></div>
+    <div class="page_content_stretch"> Are you sure you are designer?</div>
+
+    <!--JavaScript to Handle what happens as the page is scrolled. -->
+    <script>
+    /* ASSIGN A FUNCTION TO THE PAGE AS IT SCROLLS */
+    document.body.onscroll = function(event) {
+        var scrollposition = window.pageYOffset;
+        var scalesize = 1 + scrollposition * 0.01;
+        document.getElementById("scaleme").style.transform = "translate(-50%, -50%) scale(" + scalesize + ")";
+    };
+    </script>
+</body>
+</html>
