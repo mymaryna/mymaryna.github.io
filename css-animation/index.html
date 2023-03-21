@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css animation</title>
+	<style>
+		body{
+		margin:20px;
+		padding:0;
+		background-color: #999;
+		font-size: 40px;
+		font-family: sans-serif;
+    }
+		.parent{
+			background-color: #076e7c;
+			height: 400px;
+			width: 400px;
+			display: inline-block;
+		}
+		.child{
+			background-color: #ffffff;
+			height: 50%;
+			width: 50%;
+			border-radius: 100px;
+			text-align: center;
+		}
+		.parent:hover .child{
+			animation: change 4s ease-in-out forwards;
+		}
+   .parent2{
+		margin-top: 10px;
+		background-color: #076e7c;
+		height: 400px;
+		width: 400px;
+		display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+	 }
+	 .circle1 {
+		height: 50px;
+		width: 50px;
+		background-color: #fffefe;
+		border-radius: 100px;
+		margin: 0px 10px 0px 10px;
+		animation: loader .6s ease-in-out alternate infinite;
+	 }
+	 .circle2 {
+		height: 50px;
+		width: 50px;
+		background-color: #fffefe;
+		border-radius: 100px;
+		margin: 0px 10px 0px 10px;
+		animation: loader .6s ease-in-out alternate 0.2s infinite;
+	 }
+	 .circle3 {
+		height: 50px;
+		width: 50px;
+		background-color: #fffefe;
+		border-radius: 100px;
+		margin: 0px 10px 0px 10px;
+		animation: loader .6s ease-in-out alternate 0.4s infinite;
+	 }
+	 .parent3{
+		margin-top: 10px;
+		background-color: #000000;
+		height: 400px;
+		width: 400px;
+		display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+		position: relative;
+	 }
+	 .big_circle{
+		background-color: #ffffff;
+		height: 250px;
+		width: 250px;
+		border-radius: 100px;
+		display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+	 }
+	 .small_circle{
+		height: 100px;
+		width: 100px;
+		background-color: #000000;
+		border-radius: 100px;
+		margin: 0px 10px 0px 10px;
+	 }
+	 .parent3:hover .small_circle{
+		animation: eyes 2s;
+	 }
+	 .triangle{
+		width: 0;
+		height: 0;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		border-bottom: 70px solid #ffffff;
+		display: flex;
+		align-items: center;
+    margin-top: 200px;
+		position: absolute;
+	 }
+	 .shape{
+		width: 35px;
+		height: 10px;
+		background-color: #650707;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+    margin-top: 250px;
+		position: absolute;
+	 }
+	
+	@keyframes change{
+  33% {
+    background-color: rgb(189, 234, 189);
+    transform: translateY(100%);
+  }
+  66%{
+		background-color: rgb(189, 234, 189);
+    transform: translateX(100%) translateY(100%);
+	}
+  100% {
+    background-color:#ffffff;
+		transform: translateX(100%);
+  }
+}
+@keyframes loader {
+	0%{
+		transform: scale(0.5); 
+	}
+  50%{
+    background-color: rgb(162, 139, 218);
+	}
+  100% { 
+		transform: scale(1); 
+		background-color: #aa0cbc;
+	}
+}
+@keyframes eyes {
+	0%{
+		transform: translateX(0); 
+	}
+  30%{
+		transform: translateX(40%);
+	}
+	60%{
+		transform: translateY(40%);
+	}
+	90%{
+		transform: translateX(-40%);
+	}
+  100% { 
+		transform: translate(0); 
+		
+	}
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="outer">
+		<div class="page">
+			
+     
+			<div class="parent">
+				<div class="child">
+					&#42;&#95;&#42;
+				</div>
+			</div>
+			<div class="parent2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+			</div>
+			<div class="parent3">
+				<div class="big_circle">
+					<div class="small_circle"></div>
+				</div>
+
+				<div class="big_circle">
+					<div class="small_circle"></div>
+				</div>
+				<div class="triangle"></div>
+				<div class="shape"></div>
+			</div>
+			
+
+
+	</div>
+
+
+</body>
+</html>
