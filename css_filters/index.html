@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css-filters</title>
+
+	<style>
+   .page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightpink;
+  
+   }
+    .my_filter{
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .my_filter:hover{
+      animation: 1s myfilteranimation forwards;
+
+      
+    }
+    @keyframes myfilteranimation{
+      100%{
+        filter: hue-rotate(340deg) saturate(150%) drop-shadow(10px 10px ); 
+      }
+    }
+	</style>
+</head>
+<body>
+<div class="page">
+  <img class="my_filter" src="img/icecream.jpg" alt="icecream">
+</div>
+
+
+</body>
+</html>
