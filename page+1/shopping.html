@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Bag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <script src="humburger-menu.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="page">
+        <div class="upline"></div>
+        <div class="topofpage">
+          
+          <div class="hamburger-menu">
+            <div id="menu" onclick="showmenu();"> <img src="img/hamburger_menu.svg" alt="menu icon" class="menu_img"></div>
+            <div id="menuoverlay">
+              <div id="close" onclick="hidemenu();">&times;</div>
+                <div class="innermenu"> 
+                  <div class="menuitem">Jewelry</div>
+                  <div class="menuitem">Gifts</div>
+                  <div class="menuitem">Love & Engagement</div>
+                  <div class="menuitem">Fine Watches</div>
+                  <div class="menuitem">Home & Accwssories</div> 
+                  <div class="menuitem">Fragrance</div>
+                  <div class="menuitem">Men's</div>
+                  <div class="menuitem">Stories</div>
+                  <hr>
+                  <div class="menuitem"><img class="img" src="img/contact_us.svg" alt="contact icon" class="contact_img"/>Contact us</div>
+                  <div class="menuitem"><img class="img" src="img/location.svg" alt="location icon" class="location_img"/>Store Location</div>
+                  <div class="menuitem"><img class="img" src="img/my_account.svg" alt="signin icon" class="signin_img"/>My Account</div>
+                </div>
+            
+            </div>
+          </div>
+          
+          <div class="search"> 
+            <a href="search.html"> <img src="img/search.svg" alt="search icon" class="search_img"/> </a> </div>
+          <div class="location"> 
+            <a href="location.html"> <img src="img/location.svg" alt="location icon" class="location_img"/> </a> </div>
+          <div class="contact"> 
+            <a href="contact.html"> <img src="img/contact_us.svg" alt="contact icon" class="contact_img"/> </a> </div>
+          <div class="logo"> 
+            <a href="index.html"> <img src="img/tiffany.png" alt="tiffany logo" class="logo_img"/> </a> </div>
+          <div class="signin"> 
+            <a href="signin.html"> <img src="img/my_account.svg" alt="signin icon" class="signin_img"/> </a> </div> 
+          <div class="saveditems"> 
+            <a href="saveditems.html"> <img src="img/wishlist.svg" alt="saved items icon" class="saveditems_img"/> </a> </div>
+          <div class="shopping"> 
+            <a href="shopping.html"> <img src="img/shopping_bag.svg" alt="shopping bag icon" class="shoping_img"/> </a> </div>
+        </div>
+
+        <div class="upline2"></div>
+        <div class="search-nav">
+          <img class="search-icon" src="img/search.svg" alt="search icon" class="search_img"/>
+          <input class="search-bar" type="text" placeholder="Search...">
+        </div>
+        <div class="upline"></div>
+        <div class="content">
+          <div class="container1">
+                  
+            <div class="text_info">
+              <h1 class="hero_text_headline">Shopping Bag</h1>
+              <p>Your shopping bag is empty.<br> 
+                Sign in to your account to see your previously added items.</p><br>
+               <p><button onclick="document.location='signin.html'">Sign In</button></p>
+               <p><button onclick="document.location='signin.html'">Sign Up</button></p>    
+            </div>
+            <div class="hero_image">   
+              <img src="img/tiffany_box.png" alt="tiffany_img"/>      
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
